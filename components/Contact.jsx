@@ -59,7 +59,7 @@ const Contact = () => {
         }
         return(
             <div>
-                <form>
+                <form className="text-black">
                     <div>
                         <label className='' htmlFor="name">
                             Name*
