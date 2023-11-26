@@ -20,7 +20,7 @@ const Navbar = () => {
                     initial={{ y: -100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}   >
                     <Link 
-                        className='w-full flex items-center justify-center px-3 py-3 hover:text-gray-950 transition' href={link.hash}>
+                        className='w-full flex items-center justify-center px-3 py-3 hover:text-gray-950 transition text-base' href={link.hash}>
                         {link.name}
                     </Link>
                 </motion.li>
