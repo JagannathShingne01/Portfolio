@@ -26,7 +26,7 @@ const Header = () => {
                         </button>
                   </div>
                 <div>
-                    <Link href={"https://github.com/JagannathShingne01"} target="_blank" className="py-1 px-5 ring-2 ring-gray-500 rounded-md mt-6 flex">
+                    <Link href={"https://github.com/JagannathShingne01"} target="_blank" className="py-1 px-5 ring-2 ring-gray-500 rounded-md mt-6 flex ">
                       <span>Git Hub</span>
                       <FaGithub className="mt-1 ml-1"/>
                     </Link>
