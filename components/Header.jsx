@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="h-screen">
+    <div className="">
       <div  className="relative lg:max-w-7xl xl:mx-auto place-items-center flex md:flex-row flex-col-reverse justify-center items-center mx-4 md:justify-between md:my-10">
           <div className="text-gray-500 gap-2 ">
               <h2 className="text-xl md:text-3xl mt-3">Hello, </h2>
