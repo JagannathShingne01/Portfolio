@@ -18,7 +18,7 @@ const Contact = () => {
             if (
               !contactData.name ||
               !contactData.email ||
-              !contactData.phone ||
+               contactData.phone ||
               !contactData.message ||
               !contactData.service
             ){
@@ -59,8 +59,8 @@ const Contact = () => {
             });
         }
         return(
-            <div className='mt-[10rem] '>
-                <section id='contact' className='text-gray-700 '>
+            <div id='contact' className='mt-[10rem]  pt-[6rem]'>
+                <section  className='text-gray-700 '>
                     <h1 className=' text-5xl flex justify-center items-center'>Contact Me</h1>
                     <p className='mt-2 md:mt-3 mb-10 text-sm md:flex items-center justify-center mx-3 text-center'>
                         Please Contact me directly at  &nbsp;  <a className='underline' href="mailto:jagannathshingne01@gmail.com">jagannathshingne01@gmail.com</a> &nbsp;  or through this form.
@@ -69,7 +69,7 @@ const Contact = () => {
                 <form className="text-gray-700 flex items-center justify-center">
                     <div className='w-[40rem]'>
                             <div>
-                                <label className='' htmlFor="name">
+                                <label className='mx-1' htmlFor="name">
                                     Name*
                                 </label>
                                 <div>
@@ -82,13 +82,13 @@ const Contact = () => {
                                             }))}
                                             id='name'
                                             autoComplete='family-name'
-                                            placeholder='Full Name'
+                                            placeholder='Enter Full Name'
                                             className='border border-black/10 h-10 rounded-lg p-4 w-full my-2'
                                     />
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="email">
+                                <label className='mx-1' htmlFor="email">
                                     Email*
                                 </label>
                                 <div>
@@ -127,7 +127,7 @@ const Contact = () => {
                                 />
                             </div> */}
                             <div>
-                                <label htmlFor="service">
+                                <label className='mx-1' htmlFor="service">
                                     Reason for Contact*
                                 </label>
                                 <input type="text"
@@ -146,14 +146,14 @@ const Contact = () => {
                                 />
                             </div>
                             <div>
-                                <label htmlFor="message">
+                                <label className='mx-1' htmlFor="message">
                                     Message*
                                 </label>
                                 <div>
                                     <textarea name="message"
                                             id="message"
                                             value={contactData.message}
-                                            className='border border-black/10 h-50 rounded-lg p-4 w-full my-2'
+                                            className='border border-black/10 h-50 rounded-lg p-4 w-full my-2 '
                                             onChange={(e)=>
                                                 setContactData((prev)=>({
                                                     ...prev,
@@ -169,10 +169,10 @@ const Contact = () => {
                                 <button 
                                     type='submit'
                                     onClick={handleSubmit}
-                                    className='flex bg-black '
+                                    className='mx-1 flex gap-2 items-center justify-center text-sm md:text-lg h-[2rem] w-[10rem] md:h-[3rem] md:w-[12rem] text-white rounded-full bg-gray-900 transition-all outline-none group hover:scale-105'
                                 >
-                                Send Message  
-                                <FaPaperPlane/>
+                                Send Message 
+                                <FaPaperPlane className= 'group-hover:translate-x-1 group-hover:-translate-y-1'/>
                                 </button>
                             </div>
                     </div>
