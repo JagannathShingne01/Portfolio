@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className={`h-[5000px] ${figtree.className}`}>
+    <div className={`${figtree.className} `}>
       <Navbar/>
       <Header/>
       <About/>

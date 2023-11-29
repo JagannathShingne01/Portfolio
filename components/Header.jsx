@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from "next/image";
 import Link from 'next/link'
@@ -13,7 +13,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div id="home" className="mb-28">
+    <div id="home" className="mb-28 scroll-mt-48">
       <div  className="relative lg:max-w-7xl xl:mx-auto place-items-center flex md:flex-row flex-col-reverse justify-center items-center mx-4 md:justify-between md:my-10">
           <motion.div className="text-gray-500 gap-2 "
            initial={{ opacity: 0, y:100 }}

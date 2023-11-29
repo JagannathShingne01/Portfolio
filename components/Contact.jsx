@@ -59,7 +59,7 @@ const Contact = () => {
             });
         }
         return(
-            <div id='contact' className='mt-[10rem]  pt-[6rem]'>
+            <div id='contact' className=' scroll-mt-28 mb-28'>
                 <section  className='text-gray-700 '>
                     <h1 className=' text-5xl flex justify-center items-center'>Contact Me</h1>
                     <p className='mt-2 md:mt-3 mb-10 text-sm md:flex items-center justify-center mx-3 text-center'>

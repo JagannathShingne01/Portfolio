@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 const About = () => {
   return (
-    <div id='about' className='text-gray-700 mb-28  text-center flex flex-col justify-center items-center pt-[6rem] '
+    <div id='about' className='text-gray-700 mb-28  text-center flex flex-col justify-center items-center scroll-mt-28 '
        
     >
 
