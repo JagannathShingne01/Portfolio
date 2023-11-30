@@ -5,6 +5,7 @@ import Contact from '@/components/Contact'
 import Header from '@/components/Header'
 import { Figtree } from 'next/font/google';
 import About from '@/components/About'
+import Project from '@/components/Project'
 
 const figtree = Figtree({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function Home() {
     <div className={`${figtree.className} `}>
       <Navbar/>
       <Header/>
+      <Project/>
       <About/>
 
       <Contact/>

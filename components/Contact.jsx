@@ -69,7 +69,7 @@ const Contact = () => {
                 <form className="text-gray-700 flex items-center justify-center">
                     <div className='w-[40rem]'>
                             <div>
-                                <label className='mx-1' htmlFor="name">
+                                <label className='mx-2' htmlFor="name">
                                     Name*
                                 </label>
                                 <div>
@@ -88,7 +88,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div>
-                                <label className='mx-1' htmlFor="email">
+                                <label className='mx-2' htmlFor="email">
                                     Email*
                                 </label>
                                 <div>
@@ -127,7 +127,7 @@ const Contact = () => {
                                 />
                             </div> */}
                             <div>
-                                <label className='mx-1' htmlFor="service">
+                                <label className='mx-2' htmlFor="service">
                                     Reason for Contact*
                                 </label>
                                 <input type="text"
@@ -146,7 +146,7 @@ const Contact = () => {
                                 />
                             </div>
                             <div>
-                                <label className='mx-1' htmlFor="message">
+                                <label className='mx-2' htmlFor="message">
                                     Message*
                                 </label>
                                 <div>
@@ -169,7 +169,7 @@ const Contact = () => {
                                 <button 
                                     type='submit'
                                     onClick={handleSubmit}
-                                    className='mx-1 flex gap-2 items-center justify-center text-sm md:text-lg h-[2rem] w-[10rem] md:h-[3rem] md:w-[12rem] text-white rounded-full bg-gray-900 transition-all outline-none group hover:scale-105'
+                                    className='mx-2 flex gap-2 items-center justify-center text-sm md:text-lg h-[2rem] w-[10rem] md:h-[3rem] md:w-[12rem] text-white rounded-full bg-gray-900 transition-all outline-none group hover:scale-105'
                                 >
                                 Send Message 
                                 <FaPaperPlane className= 'group-hover:translate-x-1 group-hover:-translate-y-1'/>
