@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from "next/image";
 import Link from 'next/link'
-import self from "@/public/admin.jpeg"
+import self from "@/public/jspic.jpeg"
 import HorizontalTextMover from '@/lib/Animation.jsx'
 import { FaFileDownload } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -21,7 +21,7 @@ const Header = () => {
            transition={{ delay: 0.175 }}
           >
               <h2 className="text-xl md:text-3xl mt-3 text-gray-700">Hello, </h2>
-              <span className="text-2xl md:text-5xl text-gray-700">I&apos;m Jagannath Shingne</span>
+              <span className="text-3xl md:text-5xl text-gray-700">I&apos;m Jagannath Shingne</span>
               <h1 className="text-lg md:text-3xl md:mt-2 text-gray-700">Web Devloper</h1>
               <p className="md:w-96 pt-2">Experienced in crafting dynamic web applications with a commitment to clean code and user-centric design. Committed to continuous learning, I am eager to contribute innovative solutions to complex challenges.</p>
              <div className="flex">
