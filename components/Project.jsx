@@ -1,6 +1,10 @@
 import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
+import { LuGithub } from "react-icons/lu";
+import { LuExternalLink } from "react-icons/lu";
+
+
 import { projectData } from '@/lib/data'
 const Project = () => {
   return (
@@ -30,18 +34,22 @@ const Project = () => {
                             <Link
                               href="https://coursify-dun.vercel.app/"
                               target='_blank'
-                              className="rounded-md bg-gray-700  px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                              className="rounded-md bg-gray-700 flex  gap-1 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
+                              
                               Test
+                              <LuExternalLink className=' text-lg'/>
                             </Link>
                           </div>
                           <div>
                             <Link
                               href="https://github.com/JagannathShingne01/LMS_Client"
                               target='_blank'
-                              className="rounded-md bg-gray-700  px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                              className="rounded-md bg-gray-700 flex px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
+                              
                               Code
+                              <LuGithub className='ml-1 text-lg'/>
                             </Link>
                           </div>
                         </div>
@@ -55,7 +63,7 @@ const Project = () => {
                         src={val?.img}
                         alt={val?.title}
                         width={800}
-                        className="h-[300px] w-[500px] rounded-xl lg:h-auto lg:w-auto"
+                        className="md:h-[300px] md:w-[500px] rounded-xl lg:h-auto lg:w-auto mx-2"
                         height={1000}
                       />
                     </div>
@@ -82,18 +90,20 @@ const Project = () => {
                             <Link
                               href="https://pokedex-s6r4.vercel.app/"
                               target='_blank'
-                              className="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                              className="rounded-md flex gap-1 bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                               Test
+                              <LuExternalLink className=' text-lg'/>
                             </Link>
                           </div>
                           <div>
                             <Link
                              href="https://github.com/JagannathShingne01/Pokedex"
                              target='_blank'
-                              className=" rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                              className="flex gap-1 rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                              Code
+                             <LuGithub className='ml-1 text-lg'/>
                             </Link>
                           </div>
                         </div>
@@ -106,7 +116,7 @@ const Project = () => {
                         src={val?.img}
                         alt={val?.title}
                         width={800}
-                        className="h-[300px] w-[500px] rounded-xl lg:h-auto lg:w-auto "
+                        className="md:h-[300px] md:w-[500px]  rounded-xl lg:h-auto lg:w-auto "
                         height={1000}
                       />
                     </div>
