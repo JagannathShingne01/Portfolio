@@ -1,7 +1,8 @@
 import { skillsData } from '@/lib/data'
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import { motion } from 'framer-motion'
-
+import {useInView} from 'react-intersection-observer'
+import { ActiveSectionContex } from '@/context/active-context';
 const animation = {
     initial: {
         opacity: 0,
@@ -16,8 +17,16 @@ const animation = {
     }),
 };
 const Skills = () => {
+    const { ref, inView } = useInView();
+    const { setActiveSection } = useContext(ActiveSectionContex)
+
+    useEffect(()=>{
+        if (inView) {
+            setActiveSection("skills")
+        }
+    },[inView, setActiveSection]);
   return (
-    <div id='skills' className='text-gray-700 mb-28 scroll-mt-28'>
+    <div ref={ref} id='skills' className='text-gray-700 mb-28 scroll-mt-28'>
         <main className=' flex justify-center   text-center mb-10 text-5xl '>My Skills</main>
         <ul className='flex flex-wrap justify-center gap-2 md:text-lg text-gray-800 mx-2 md:mx-auto lg:w-[700px] '>
             {skillsData.map((skill, idx) => (

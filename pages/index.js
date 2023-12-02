@@ -7,6 +7,7 @@ import { Figtree } from 'next/font/google';
 import About from '@/components/About'
 import Project from '@/components/Project'
 import Skills from '@/components/Skills'
+import { ActiveSectionContextProvider } from '@/context/active-context'
 
 const figtree = Figtree({ subsets: ['latin'] })
 
@@ -14,14 +15,16 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className={`${figtree.className} `}>
+    <ActiveSectionContextProvider>
+    {/* <div className={`${figtree.className} `}> */}
       <Navbar/>
       <Header/>
-      <Skills/>
       <Project/>
+      <Skills/>
       <About/>
 
       <Contact/>
-    </div>
+    {/* </div> */}
+    </ActiveSectionContextProvider>
   )
 }

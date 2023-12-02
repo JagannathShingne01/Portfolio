@@ -1,13 +1,13 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import { links } from '@/lib/data.js';
 import Link from "next/link"
 import clsx from 'clsx';
+import { ActiveSectionContex } from '@/context/active-context';
 
 function Navbar() {
-              
-  const [activeSection, setActiveSection] = useState("Home")
+    const {activeSection, setActiveSection} = useContext(ActiveSectionContex)
   return (
     
     <header className='z-[999] relative text-black'>
