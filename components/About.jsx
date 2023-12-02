@@ -1,14 +1,28 @@
 "use client"
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import {useInView} from 'react-intersection-observer'
+import { ActiveSectionContex } from '@/context/active-context';
+
+
 const About = () => {
+
+  const { ref, inView } = useInView();
+  const { setActiveSection, timeOfLastClick } = useContext(ActiveSectionContex)
+
+  useEffect(()=>{
+      if (inView && Date.now() - timeOfLastClick > 1000) {
+          setActiveSection("About")
+      }
+  },[inView, setActiveSection, timeOfLastClick]);
+
   return (
-    <div id='about' className='text-gray-700 mb-36  text-center flex flex-col justify-center items-center scroll-mt-28 mx-4'
+    <div id='about' ref={ref} className='text-gray-700 mb-36  text-center flex flex-col justify-center items-center scroll-mt-28 mx-4'
        
     >
 
             <h1 className=' text-5xl mb-4 md:mb-8'>About Me</h1>
-            <p className='text-black mb-3 md:w-[40rem] text-left md:text-center leading-6' >
+            <p className='text-black mb-3 md:w-[40rem] text-left md:text-center leading-7' >
             Greetings from my corner of the web! I&apos;m a passionate full-stack developer based in Dombivli, India, holding a B.Sc in Information Technology from K V Pendharkar College.
             Beyond coding, you&apos;ll find me immersed in the rhythm of music, with a deep love for listening to songs. I also enjoy the thrill of the cricket pitch, where I indulge in friendly games to unwind. Additionally, I find inspiration and knowledge in podcasts, expanding my horizons beyond the lines of code.            </p>
             <p className=' text-black md:w-[40rem] text-left md:text-center leading-6'> 

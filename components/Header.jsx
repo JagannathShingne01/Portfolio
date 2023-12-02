@@ -1,21 +1,33 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from "next/image";
 import Link from 'next/link'
 import self from "@/public/jspic.jpeg"
-import HorizontalTextMover from '@/lib/Animation.jsx'
 import { FaFileDownload } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-
+import {useInView} from 'react-intersection-observer'
+import { ActiveSectionContex } from '@/context/active-context';
 
 
 
 const Header = () => {
+
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection } = useContext(ActiveSectionContex)
+
+  useEffect(()=>{
+      if (inView) {
+          setActiveSection("Home")
+      }
+  },[inView, setActiveSection]);
+
   return (
-    <div id="home" className="mb-28 scroll-mt-48">
-      <div  className="relative lg:max-w-7xl xl:mx-auto place-items-center flex md:flex-row flex-col-reverse justify-center items-center mx-4 md:justify-between md:my-10">
-          <motion.div className="text-gray-500 gap-2 "
+    <div ref={ref} id="home" className="md:mb-36 mb-28 scroll-mt-48">
+      <div   className="relative lg:max-w-7xl xl:mx-auto place-items-center flex md:flex-row flex-col-reverse justify-center items-center mx-4 md:justify-between md:my-10">
+          <motion.div   className="text-gray-500 gap-2 "
            initial={{ opacity: 0, y:100 }}
            animate={{ opacity: 1, y:0 }}
            transition={{ delay: 0.175 }}

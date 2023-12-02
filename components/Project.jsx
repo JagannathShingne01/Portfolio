@@ -1,16 +1,29 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import Image from "next/image";
+import {useInView} from 'react-intersection-observer'
 import Link from "next/link";
 import { LuGithub } from "react-icons/lu";
 import { LuExternalLink } from "react-icons/lu";
-
-
 import { projectData } from '@/lib/data'
+import { ActiveSectionContex } from '@/context/active-context';
+
+
+
 const Project = () => {
+
+  const { ref, inView } = useInView();
+  const { setActiveSection, timeOfLastClick } = useContext(ActiveSectionContex)
+
+  useEffect(()=>{
+      if (inView && Date.now() - timeOfLastClick > 1000) {
+          setActiveSection("Projects")
+      }
+  },[inView, setActiveSection,timeOfLastClick ]);
+
   return (
     <div>
-      <div id='projects' className="mb-28 scroll-mt-28 text-gray-700">
-      <div className="mx-auto max-w-7xl px-6 lg:px-10 lg:mt-4">
+      <div  id='projects' className="mb-28 scroll-mt-28 text-gray-700">
+      <div ref={ref} className="mx-auto max-w-7xl px-6 lg:px-10 lg:mt-4">
           <h2 className="text-5xl flex justify-center items-center">
            My Project
           </h2>

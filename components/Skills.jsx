@@ -1,3 +1,4 @@
+"use client"
 import { skillsData } from '@/lib/data'
 import React, { useContext, useEffect } from 'react'
 import { motion } from 'framer-motion'
@@ -18,13 +19,13 @@ const animation = {
 };
 const Skills = () => {
     const { ref, inView } = useInView();
-    const { setActiveSection } = useContext(ActiveSectionContex)
+    const { setActiveSection, timeOfLastClick } = useContext(ActiveSectionContex)
 
     useEffect(()=>{
-        if (inView) {
-            setActiveSection("skills")
+        if (inView && Date.now() - timeOfLastClick > 1000) {
+            setActiveSection("Skills")
         }
-    },[inView, setActiveSection]);
+    },[inView, setActiveSection, timeOfLastClick]);
   return (
     <div ref={ref} id='skills' className='text-gray-700 mb-28 scroll-mt-28'>
         <main className=' flex justify-center   text-center mb-10 text-5xl '>My Skills</main>
@@ -40,13 +41,8 @@ const Skills = () => {
                 }}
                 custom={idx}
                 className='bg-white border border-black/[0.1] rounded-xl px-4 py-2 md:px-5 md:py-3 flex gap-1' key={skill.title}>{skill.title}
-
                 <p className='mt-1 text-lg'>{skill.logo}</p>
                 </motion.li>
-                
-                
-                
-
             ))}
         </ul>
     </div>
