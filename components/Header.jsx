@@ -8,8 +8,10 @@ import { FaFileDownload } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import {useInView} from 'react-intersection-observer'
 import { ActiveSectionContex } from '@/context/active-context';
+import { Roboto_Mono } from 'next/font/google';
 
 
+const roboto = Roboto_Mono({subsets: ['latin']})
 
 const Header = () => {
 
@@ -25,15 +27,15 @@ const Header = () => {
   },[inView, setActiveSection]);
 
   return (
-    <div ref={ref} id="home" className="md:mb-36 mb-28 scroll-mt-48">
+    <div ref={ref} id="home" className={`md:mb-36 mb-28 scroll-mt-48 ${roboto.className}`}>
       <div   className="relative lg:max-w-7xl xl:mx-auto place-items-center flex md:flex-row flex-col-reverse justify-center items-center mx-4 md:justify-between md:my-10">
           <motion.div   className="text-gray-500 gap-2 "
            initial={{ opacity: 0, y:100 }}
            animate={{ opacity: 1, y:0 }}
            transition={{ delay: 0.175 }}
           >
-              <h2 className="text-xl md:text-3xl mt-3 text-gray-700">Hello, </h2>
-              <span className="text-3xl md:text-5xl text-gray-700">I&apos;m Jagannath Shingne</span>
+              <h2 className="text-xl md:text-3xl mt-3 text-gray-700">Hello,&#128075; </h2>
+              <span className="text-3xl md:text-5xl text-gray-700">I&apos;m Jagannath Shingne </span>
               <h1 className="text-lg md:text-3xl md:mt-2 text-gray-700">Web Devloper</h1>
               <p className="md:w-96 pt-2">Experienced in crafting dynamic web applications with a commitment to clean code and user-centric design. Committed to continuous learning, I am eager to contribute innovative solutions to complex challenges.</p>
              <div className="flex">

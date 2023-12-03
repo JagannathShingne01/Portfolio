@@ -9,24 +9,22 @@ import Project from '@/components/Project'
 import Skills from '@/components/Skills'
 import { ActiveSectionContextProvider } from '@/context/active-context'
 import Footer from '@/components/Footer'
-
+import { Roboto_Mono } from 'next/font/google'
 const figtree = Figtree({ subsets: ['latin'] })
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
+      <div className={`${figtree.className} `}> 
     <ActiveSectionContextProvider>
-    {/* <div className={`${figtree.className} `}> */}
       <Navbar/>
       <Header/>
       <Project/>
       <Skills/>
       <About/>
-
       <Contact/>
       <Footer />
-    {/* </div> */}
     </ActiveSectionContextProvider>
+     </div>
   )
 }

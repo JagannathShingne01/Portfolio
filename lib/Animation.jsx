@@ -1,31 +1,31 @@
-import { motion, useAnimation } from 'framer-motion';
-import { useEffect } from 'react';
+import { createContext, useContext } from "react";
+import { motion, useReducedMotion } from "framer-motion";
+const FadeInStaggerContext = createContext(false);
+const viewport = { once: true, margin: "0px 0px -200px" };
 
-const HorizontalTextMover = ({ props, text }) => {
-  const controls = useAnimation();
 
-  useEffect(() => {
-    const runAnimation = async () => {
-      await controls.start({
-        x: ['0%', '100%'],
-        transition: {
-          duration: 5,
-          ease: 'linear',
-          repeat: Infinity,
-          repeatType: 'loop'
-        },
-      });
-    };
-
-    runAnimation();
-  }, [controls]);
+export function FadeUp(props) {
+  let shouldReduceMotion = useReducedMotion();
+  let isInStaggerGroup = useContext(FadeInStaggerContext);
 
   return (
-    <motion.div className='m-0 absolute z-10 whitespace-nowrap -bottom-[270px] -left-[100px] font-bold text-[30vh] text-gray-500 opacity-10 overflow-hidden'animate={controls}>
-      {text}
-      {props}
-    </motion.div>
-  );
-};
+    <motion.div
+    
+      variants={{
+        hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 24 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      transition={{ duration: 0.6}}
+      {...(isInStaggerGroup
+        ? {}
+        : {
+            initial: "hidden",
+            whileInView: "visible",
+            viewport: viewport,
 
-export default HorizontalTextMover;
+          })}
+      {...props}
+    />
+  );
+}
+
