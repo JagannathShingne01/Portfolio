@@ -27,8 +27,12 @@ const Header = () => {
   },[inView, setActiveSection]);
 
   return (
-    <div ref={ref} id="home" className={`md:mb-36 mb-28 scroll-mt-48 ${roboto.className}`}>
-      <div   className="relative lg:max-w-7xl xl:mx-auto place-items-center flex md:flex-row flex-col-reverse justify-center items-center mx-4 md:justify-between md:my-10">
+    <>
+    
+
+
+    <div ref={ref} id="home" className={`md:mb-36 mb-28 scroll-mt-44 ${roboto.className}`}>
+      <div   className="relative lg:max-w-7xl xl:mx-auto place-items-center flex md:flex-row flex-col-reverse justify-center items-center mx-4 md:mx-4 md:justify-between md:my-10">
           <motion.div   className="text-gray-500 gap-2 "
            initial={{ opacity: 0, y:100 }}
            animate={{ opacity: 1, y:0 }}
@@ -65,12 +69,13 @@ const Header = () => {
                   width={500}
                   height={500}
                   alt="Jagannath Shingne"
-                  className="md:max-h-[450px] rounded-full"
+                  className="md:h-[450px] rounded-full"
               />
           </div>
         
       </div>
     </div>
+    </>
   )
 };
 
