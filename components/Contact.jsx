@@ -75,13 +75,13 @@ const Contact = () => {
         }
         return(
             <div id='contact' ref={ref} className=' scroll-mt-28 mb-6'>
-                <section  className='text-gray-700 '>
+                <section  className='text-gray-700 dark:text-white/80'>
                     <h1 className=' text-5xl flex justify-center items-center'>Contact Me</h1>
                     <p className='mt-2 md:mt-3 mb-10 text-sm md:flex items-center justify-center mx-3 text-center'>
                         Please Contact me directly at  &nbsp;  <a className='underline' href="mailto:jagannathshingne01@gmail.com">jagannathshingne01@gmail.com</a> &nbsp;  or through this form.
                     </p>
                 </section>
-                <form className="text-gray-700 flex items-center justify-center">
+                <form className="text-gray-700 dark:text-white/50 flex items-center justify-center">
                     <div className='w-[40rem]'>
                             <div>
                                 <label className='mx-2' htmlFor="name">

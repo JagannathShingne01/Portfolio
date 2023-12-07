@@ -30,7 +30,7 @@ const Skills = () => {
         }
     },[inView, setActiveSection, timeOfLastClick]);
   return (
-    <div ref={ref} id='skills' className='text-gray-700 mb-28 scroll-mt-28'>
+    <div ref={ref} id='skills' className='text-gray-700 mb-28 scroll-mt-28 dark:text-white/80'>
         <main className=' flex justify-center mb-4  text-center text-5xl '>My Skills</main>
         <p className='mt-2 mb-10  text-sm md:flex items-center justify-center mx-3 text-center'>Here are some of the technologies I&apos;ve been working with recently: </p>
         <ul className='flex flex-wrap justify-center gap-2 md:text-lg text-gray-800 mx-2 md:mx-auto lg:w-[700px] '>

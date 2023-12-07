@@ -23,7 +23,7 @@ const Project = () => {
 
   return (
     <div>
-      <div  id='projects' className="mb-28 scroll-mt-28 text-gray-700">
+      <div  id='projects' className="mb-28 scroll-mt-28 text-gray-700 dark:text-white/80">
       <div ref={ref} className="mx-auto max-w-7xl px-6 lg:px-10 lg:mt-4">
           <h2 className="text-5xl flex justify-center items-center">
            My Project
@@ -77,7 +77,7 @@ const Project = () => {
                         src={val?.img}
                         alt={val?.title}
                         width={800}
-                        className="md:h-[300px] md:w-[500px] rounded-xl lg:h-auto lg:w-auto mx-2"
+                        className="md:h-[300px] md:w-[500px] rounded-xl lg:h-auto lg:w-auto "
                         height={1000}
                       />
                     </div>
@@ -131,7 +131,7 @@ const Project = () => {
                         src={val?.img}
                         alt={val?.title}
                         width={800}
-                        className="md:h-[300px] md:w-[500px]  rounded-xl lg:h-auto lg:w-auto "
+                        className="md:h-[300px] md:w-[500px]  rounded-xl lg:h-auto lg:w-auto"
                         height={1000}
                       />
                     </div>
