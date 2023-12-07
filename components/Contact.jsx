@@ -184,7 +184,7 @@ const Contact = () => {
                                 <button 
                                     type='submit'
                                     onClick={handleSubmit}
-                                    className='mx-2 flex gap-2 items-center justify-center text-sm md:text-lg h-[2rem] w-[10rem] md:h-[3rem] md:w-[12rem] text-white rounded-full bg-gray-900 transition-all outline-none group hover:scale-105'
+                                    className='mx-2 flex gap-2 items-center justify-center text-sm md:text-lg h-[2rem] w-[10rem] md:h-[3rem] md:w-[12rem] text-white rounded-full bg-gray-900 dark:bg-gray-800 transition-all outline-none group hover:scale-105'
                                 >
                                 Send Message 
                                 <FaPaperPlane className= 'group-hover:translate-x-1 group-hover:-translate-y-1'/>

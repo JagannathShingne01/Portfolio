@@ -33,7 +33,7 @@ const ThemeSwitch = () => {
     },[])
 
   return (
-   <button className='fixed bottom-4 right-4 text-gray-700 bg-white h-[3rem] w-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex justify-center items-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950'
+   <button className='fixed bottom-4 right-4 text-gray-700 bg-white/70 h-[3rem] w-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-black dark:border-white border-opacity-40 shadow-2xl rounded-full flex justify-center items-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950/10'
    onClick={toggleTheme}
    >
     {

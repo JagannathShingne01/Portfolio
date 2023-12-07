@@ -34,13 +34,13 @@ const Project = () => {
             return (
               <div key={val.title} className="relative ">
                 <div className="lg:mx-auto lg:max-w-7xl lg:px-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-10 place-items-center">
-                  <div className="  max-w-3xl px-6 lg:px-10 py-1 pb-0 lg:py-9  order-3 lg:order-none lg:max-w-none rounded-2xl lg:bg-gray-100  lg:shadow-xl  lg:-mr-40 ">
+                  <div className="  max-w-3xl px-6 lg:px-10 py-1 pb-0 lg:py-9  order-3 lg:order-none lg:max-w-none rounded-2xl lg:bg-gray-100 dark:bg-gray-800  lg:shadow-xl  lg:-mr-40 ">
                     <FadeUp >
                       <section className="lg:mr-20 text-center lg:text-start ">
                         <h2 className="text-2xl font-semibold  lg:mb-3 lg:px-2  tracking-tight text-primary  pt-3 lg:pt-0">
                           {val?.title}
                         </h2>
-                        <p className="mt-2  lg:px-2  text-base  leading-6 text-gray-700  ">
+                        <p className="mt-2  lg:px-2  text-base  leading-6 text-gray-700 dark:text-gray-400 ">
                           {val?.description}
                         </p>
                         <div className="mt-4  lg:px-2 lg:mt-4 flex lg:items-start lg:justify-start items-center justify-center gap-x-6">
@@ -89,14 +89,14 @@ const Project = () => {
             return (
               <div key={val.title} className="relative ">
                 <div className="lg:mx-auto lg:max-w-7xl lg:px-8 grid grid-cols-1 lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-14 place-items-center">
-                  <div className=" max-w-3xl order-3 lg:order-none mx-auto px-6 lg:px-16 py-1 lg:py-9 lg:max-w-none rounded-2xl lg:bg-gray-100 backdrop-blur-2xl lg:shadow-xl lg:-ml-40 ">
+                  <div className=" max-w-3xl order-3 lg:order-none mx-auto px-6 lg:px-16 py-1 lg:py-9 lg:max-w-none rounded-2xl lg:bg-gray-100 dark:bg-gray-800  backdrop-blur-2xl lg:shadow-xl lg:-ml-40 ">
                     <FadeUp
                      >
                       <section className="lg:ml-16  text-center lg:text-start	mx-auto ">
-                        <h2 className="text-2xl font-semibold lg:px-6  tracking-tight text-primary  pt-3 lg:pt-0">
+                        <h2 className="text-2xl font-semibold lg:px-6  tracking-tight text-primary pt-3 lg:pt-0">
                           {val?.title}
                         </h2>
-                        <p className="mt-2  lg:px-6 text-base leading-6 text-gray-700 ">
+                        <p className="mt-2  lg:px-6 text-base leading-6 text-gray-700 dark:text-gray-400">
                           {val?.description}
                         </p>
                       
