@@ -46,7 +46,7 @@ const Project = () => {
                         <div className="mt-4  lg:px-2 lg:mt-4 flex lg:items-start lg:justify-start items-center justify-center gap-x-6">
                           <div>
                             <Link
-                              href="https://coursify-dun.vercel.app/"
+                              href={`${val?.slug}`}
                               target='_blank'
                               className="rounded-md bg-gray-700 flex  gap-1 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
@@ -57,7 +57,7 @@ const Project = () => {
                           </div>
                           <div>
                             <Link
-                              href="https://github.com/JagannathShingne01/LMS_Client"
+                              href={`${val?.git}`}
                               target='_blank'
                               className="rounded-md bg-gray-700 flex px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
@@ -103,7 +103,7 @@ const Project = () => {
                         <div className="mt-4  lg:px-6 lg:mt-4  flex lg:items-start lg:justify-start items-center justify-center gap-x-6">
                           <div>
                             <Link
-                              href="https://pokedex-s6r4.vercel.app/"
+                              href={`${val?.slug}`}
                               target='_blank'
                               className="rounded-md flex gap-1 bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
@@ -113,7 +113,7 @@ const Project = () => {
                           </div>
                           <div>
                             <Link
-                             href="https://github.com/JagannathShingne01/Pokedex"
+                             href={`${val?.git}`}
                              target='_blank'
                               className="flex gap-1 rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
