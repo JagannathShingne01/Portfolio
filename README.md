@@ -1,4 +1,4 @@
 ## Hello World!,👋
-Check out!
+Check out my Portfolio Website.
 ## Deploy on Vercel:
 Portfolio- https://jagannathdev.vercel.app/
