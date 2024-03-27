@@ -3,7 +3,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from "next/image";
 import Link from 'next/link'
-import self from "@/public/jspic.jpeg"
+import self from "@/public/js.png"
+import selfl from "@/public/jsl.png"
 import { FaFileDownload } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import {useInView} from 'react-intersection-observer'
@@ -63,9 +64,18 @@ const Header = () => {
              
              
           </motion.div>
-          <div className="">
+          <div className="block dark:hidden">
               <Image 
                   src={self}
+                  width={500}
+                  height={500}
+                  alt="Jagannath Shingne"
+                  className="md:h-[450px] rounded-full"
+              />
+          </div>
+          <div className="hidden dark:block">
+              <Image 
+                  src={selfl}
                   width={500}
                   height={500}
                   alt="Jagannath Shingne"

@@ -30,7 +30,7 @@ const About = () => {
             <p className=' text-black dark:text-white/50 md:w-[40rem] text-left md:text-center leading-6'> 
             As a fresher actively seeking opportunities, I bring a fresh perspective and a strong skill set, including mastery of HTML, React.js, Express.js, CSS, Tailwind CSS, Node.js, and MongoDB. This rich skill set forms a robust toolkit for crafting dynamic and efficient web applications.
             
-My commitment to excellence is exemplified in my recent completion of the Full Stack Developer course with PW Skills. Through self-directed online learning, I gained a comprehensive understanding of building dynamic web applications. Guided by the course content, I prioritized clean code, reusability, and readability, ensuring each project meets the highest standards. I am enthusiastic about contributing my skills and learning from new challenges in a professional setting.            </p>
+My commitment to excellence is exemplified in my recent completion of the <a href="https://drive.google.com/file/d/1_YqyFUJrdpV8Vp-LSVgIpEX7LjOl_VhO/view?usp=sharing" target='_blank' className='underline' > Full Stack Developer</a> course with PW Skills. Through self-directed online learning, I gained a comprehensive understanding of building dynamic web applications. Guided by the course content, I prioritized clean code, reusability, and readability, ensuring each project meets the highest standards. I am enthusiastic about contributing my skills and learning from new challenges in a professional setting.            </p>
 </FadeUp>
 </div>
   )
