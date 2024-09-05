@@ -46,7 +46,7 @@ const Header = () => {
              <div className="flex">
                 <div className="">
                       <button  className="py-1 px-5 ring-2 ring-gray-500 rounded-md mt-6 mr-8 flex text-gray-700 dark:text-white/80 dark:bg-gray-900/10">
-                            <a href="/JagannathResume.pdf"  download target="_blank">Resume</a>
+                            <a href="/Resume.docx"  download target="_blank">Resume</a>
                             <FaFileDownload className="mt-1 ml-1"/>
                         </button>
                   </div>
