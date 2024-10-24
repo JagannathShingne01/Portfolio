@@ -82,7 +82,7 @@ const Contact = () => {
                         Please Contact me directly at  &nbsp;  <a className='underline' href="mailto:jagannathshingne01@gmail.com">jagannathshingne01@gmail.com</a> &nbsp;  or through this form.
                     </p>
                 </section>
-                <form className="text-gray-700 dark:text-white/50 flex items-center justify-center">
+                <form className="text-gray-700 dark:text-white/50 flex items-center justify-center mx-2">
                     <div className='w-[40rem]'>
                             <div>
                                 <label className='mx-2' htmlFor="name">
