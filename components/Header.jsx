@@ -41,12 +41,13 @@ const Header = () => {
           >
               <h2 className="text-xl md:text-3xl mt-3 text-gray-700 dark:text-white/80">Hello,&#128075; </h2>
               <span className="text-3xl md:text-5xl text-gray-700 dark:text-white/80">I&apos;m Jagannath Shingne </span>
-              <h1 className="text-lg md:text-3xl md:mt-2 text-gray-700 dark:text-white/80">Web Devloper</h1>
-              <p className="md:w-96 pt-2 dark:text-white">Experienced in crafting dynamic web applications with a commitment to clean code and user-centric design. Committed to continuous learning, I am eager to contribute innovative solutions to complex challenges.</p>
+              <h1 className="text-lg md:text-3xl md:mt-2 text-gray-700 dark:text-white/80">Software Developer</h1>
+              <p className="md:w-96 pt-2 dark:text-white">I am a MERN Stack Developer with 1.2+ years of hands-on experience building,
+  scaling, and deploying Full-stack applications.</p>
              <div className="flex">
                 <div className="">
                       <button  className="py-1 px-5 ring-2 ring-gray-500 rounded-md mt-6 mr-8 flex text-gray-700 dark:text-white/80 dark:bg-gray-900/10">
-                            <a href="/Resume.pdf"  download target="_blank">Resume</a>
+                            <a href="/JagannathDEVResume.pdf"  download target="_blank">Resume</a>
                             <FaFileDownload className="mt-1 ml-1"/>
                         </button>
                   </div>
