@@ -14,7 +14,9 @@ const Project = () => {
 
   const { ref, inView } = useInView();
   const { setActiveSection, timeOfLastClick } = useContext(ActiveSectionContex)
-
+  console.log(inView)
+  console.log(timeOfLastClick)
+  console.log(ActiveSectionContex)
   useEffect(()=>{
       if (inView && Date.now() - timeOfLastClick > 1000) {
           setActiveSection("Projects")

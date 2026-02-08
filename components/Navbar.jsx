@@ -25,7 +25,7 @@ function Navbar() {
                     initial={{ y: -100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}   >
                     <Link 
-                        className={clsx('w-full flex items-center justify-center px-3 py-3 hover:text-gray-950 transition text-base dark:text-gray-200 dark:hover:text-gray-300',
+                        className={clsx('w-full flex items-center justify-center px-1.5 py-3 hover:text-gray-950 transition text-base dark:text-gray-200 dark:hover:text-gray-300',
                         {
                           "text-gray-950 dark:text-gray-200": activeSection === link.name,
                         }

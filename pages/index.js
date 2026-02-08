@@ -10,6 +10,7 @@ import { ActiveSectionContextProvider } from '@/context/active-context'
 import Footer from '@/components/Footer'
 import ThemeSwitch from '@/components/Theme-Switch';
 import Head from 'next/head';
+import BlogSection from '@/components/Blog';
 
 const figtree = Figtree({ subsets: ['latin'] })
 const inter = Inter({ subsets: ['latin'] })
@@ -31,6 +32,7 @@ experience" />
       <Header/>
       <Project/>
       <Skills/>
+      <BlogSection/>
       <About/>
       <Contact/>
       <Footer />
