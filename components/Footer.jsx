@@ -15,7 +15,7 @@ const Footer = () => {
         <a target='_blank' className='mt-1 text-lg' href="https://www.linkedin.com/in/jagannath-shingne-201aba236"><FaLinkedinIn/></a>
      </p>
      <small className='text-gray-500   '>
-        &copy; Design And Devlop by Jagannath Shingne.  
+        &copy; Design And Developed by Jagannath Shingne.  
         {/* <span className='text-xl mt-1 text-red-600'>&#9829;</span> */}
     </small>
    </footer>
